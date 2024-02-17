@@ -1,0 +1,1 @@
+export const round = x => Math.round(x * 2) / 2

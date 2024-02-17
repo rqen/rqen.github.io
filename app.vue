@@ -1,7 +1,9 @@
 <template>
-  <main>
-    Personal website.. Yay..
-  </main>
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <style lang="postcss">

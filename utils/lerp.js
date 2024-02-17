@@ -1,0 +1,1 @@
+export const lerp = (a, b, n = 0.1) => (1 - n) * a + n * b
