@@ -78,9 +78,13 @@ onMounted(async ()=>{
   overflow: hidden;
 
   &.-gradient {
-    background-image: radial-gradient(red, transparent);
+    --gbgx: 25vw;
+    --gbgy: 25vh;
+    background-image: radial-gradient(#ddd, transparent);
     background-size: 50% 50%;
-    background-position: var(--gbgx, 50%) var(--gbgy, 50%);
+    --calced-bgx: calc(var(--gbgx) - 25vw);
+    --calced-bgy: calc(var(--gbgy) - 25vh);
+    background-position: var(--calced-bgx, 50%) var(--calced-bgy, 50%);
     background-repeat: no-repeat;
   }
   

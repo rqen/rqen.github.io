@@ -10,7 +10,7 @@ const cssFunctions = {
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'rqen.com - Christian Røen'
+      title: 'rqen.com - Christian Røen portfolio-ish'
     }
   },
   devtools: { enabled: true },
