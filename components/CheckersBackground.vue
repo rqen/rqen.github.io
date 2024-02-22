@@ -19,9 +19,11 @@ const props = defineProps({
 const bgcolor = computed(()=>{
   return props.checkersBgColor
 })
+
 watch(bgcolor, ()=>{
   console.log('component bgcolor: ', bgcolor.value)
 })
+
 const showG = ref(props.showGrid)
 const bg = ref(null)
 const gridColors = ref([])
