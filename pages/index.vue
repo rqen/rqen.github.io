@@ -45,11 +45,11 @@ const setBg = ()=>{
         <ul class="projects-list">
           <li class="project">
             <!-- <h3 class="heading">Implement Consulting Group</h3> -->
-            <a href="https://implementconsultinggroup.com/" class="link">implementconsultinggroup.com</a>
+            <a href="https://implementconsultinggroup.com/" class="link">Implement Consulting Group</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">One and Only Musicals</h3> -->
-            <a href="https://oneandonlymusicals.dk/" class="link">oneandonlymusicals.dk</a>
+            <a href="https://oneandonlymusicals.dk/" class="link">One and Only Musicals</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">WSA</h3> -->
@@ -57,19 +57,23 @@ const setBg = ()=>{
           </li>
           <li class="project">
             <!-- <h3 class="heading">BoConcept</h3> -->
-            <a href="https://boconcept.com/" class="link">boconcept.com</a>
+            <a href="https://boconcept.com/" class="link">BoConcept</a>
+          </li>
+          <li class="project">
+            <!-- <h3 class="heading">Pandora</h3> -->
+            <a href="#nolongeronline" class="link">Pandora, product launch sites</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Muuto</h3> -->
-            <a href="https://muuto.com/" class="link">muuto.com</a>
+            <a href="https://muuto.com/" class="link">Muuto</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Magasin</h3> -->
-            <a href="https://magasin.dk/" class="link">magasin.dk</a>
+            <a href="https://magasin.dk/" class="link">Magasin</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Tryg</h3> -->
-            <a href="https://tryg.dk/" class="link">tryg.dk</a>
+            <a href="https://tryg.dk/" class="link">Tryg</a>
           </li>
         </ul>
       </div>
