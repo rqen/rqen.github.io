@@ -44,7 +44,7 @@ onMounted(()=>{
       <div class="outbound page-margin">
         <ul class="outbound-list">
           <li>
-            <a href="https://www.linkedin.com/in/christian-r%C3%B8en-hansen-121b696" title="LinkedIn">LinkedIn</a>
+            <a class="link" href="https://www.linkedin.com/in/christian-r%C3%B8en-hansen-121b696" title="LinkedIn">LinkedIn</a>
           </li>
           <li>
             <a href="https://codepen.io/rqendotcom/" title="Codepen">
@@ -52,10 +52,10 @@ onMounted(()=>{
             </a>
           </li>
           <li>
-            <a href="https://github.com/rqen" title="Github">Github</a>
+            <a class="link" href="https://github.com/rqen" title="Github">Github</a>
           </li>
           <li>
-            <a href="https://twitter.com/rqen" title="X or whatever it's currently called">Twitter</a>
+            <a class="link" href="https://twitter.com/rqen" title="X or whatever it's currently called">Twitter</a>
           </li>
         </ul>
       </div>
@@ -65,35 +65,35 @@ onMounted(()=>{
         <ul class="projects-list">
           <li class="project">
             <!-- <h3 class="heading">Implement Consulting Group</h3> -->
-            <a href="https://implementconsultinggroup.com/" class="link">Implement Consulting Group</a>
+            <a target="_blank" href="https://implementconsultinggroup.com/" class="link">Implement Consulting Group</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">One and Only Musicals</h3> -->
-            <a href="https://oneandonlymusicals.dk/" class="link">One and Only Musicals</a>
+            <a target="_blank" href="https://oneandonlymusicals.dk/" class="link">One and Only Musicals</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">WSA</h3> -->
-            <a href="https://www.wsa.com/" class="link">wsa.com</a>
+            <a target="_blank" href="https://www.wsa.com/" class="link">wsa.com</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">BoConcept</h3> -->
-            <a href="https://boconcept.com/" class="link">BoConcept</a>
+            <a target="_blank" href="https://boconcept.com/" class="link">BoConcept</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Pandora</h3> -->
-            <a href="#nolongeronline" class="no-link">Pandora - product launch sites</a>
+            <a target="_blank" href="#nolongeronline" class="no-link">Pandora - product launch sites</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Muuto</h3> -->
-            <a href="https://muuto.com/" class="link">Muuto</a>
+            <a target="_blank" href="https://muuto.com/" class="link">Muuto</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Magasin</h3> -->
-            <a href="https://magasin.dk/" class="link">Magasin</a>
+            <a target="_blank" href="https://magasin.dk/" class="link">Magasin</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Tryg</h3> -->
-            <a href="https://tryg.dk/" class="link">Tryg</a>
+            <a target="_blank" href="https://tryg.dk/" class="link">Tryg</a>
           </li>
         </ul>
       </div>
@@ -126,6 +126,26 @@ onMounted(()=>{
   margin-inline: 5vw;
 }
 
+.link {
+  position: relative;
+
+  &:hover:after {
+    scale: 1 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 20px;
+    height: 1px;
+    scale: 0 1;
+    background-color: currentColor;
+    transform-origin: 0 100%;
+    transition: scale .5s ease;
+  }
+}
 
 .title {
   position: relative;
