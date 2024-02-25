@@ -97,7 +97,7 @@ onMounted(()=>{
           </li>
         </ul>
       </div>
-    </div>
+    </div> 
 
     <div class="bgs">
       <!-- <CheckersBackground :checkersBgColor="checkersBgColor" :showGrid="true" /> -->
