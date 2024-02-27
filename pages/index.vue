@@ -1,6 +1,5 @@
 <script setup>
 import gsap from 'gsap'
-import { onMounted } from 'vue'
 
 const colors = ['#fff', '#fdfdfd', '#ededed', '#bada55']
 const checkersBgColor = ref('')
@@ -30,17 +29,7 @@ onMounted(()=>{
 <template>
   <div @click="setBg">
     <div class="content" :class="{'-intro': !doIntro}">
-      <div class="title">
-        <div class="upper">
-          <div>RQEN</div>
-          <div>.COM</div>
-        </div>
-        <div class="spacer"></div>
-        <div class="lower">
-          <div>CHRISTIAN</div>
-          <div>RØEN</div>
-        </div>
-      </div>
+      <Hero :doIntro="doIntro" />
       <div class="outbound page-margin">
         <ul class="outbound-list">
           <li>
@@ -60,7 +49,7 @@ onMounted(()=>{
         </ul>
       </div>
 
-      <div class="projects page-margin mt-4">
+      <div class="projects page-margin mt-8">
         <h2 class="tagline">A few brands i've helped over the years</h2>
         <ul class="projects-list">
           <li class="project">
@@ -97,7 +86,7 @@ onMounted(()=>{
           </li>
         </ul>
       </div>
-    </div> 
+    </div>
 
     <div class="bgs">
       <!-- <CheckersBackground :checkersBgColor="checkersBgColor" :showGrid="true" /> -->
@@ -112,13 +101,8 @@ onMounted(()=>{
   max-height: 100vh;
   z-index: 2;
 
-  &.-intro {
-    .upper {
-      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    }
-    .lower {
-      clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0% 0%);
-    }
+  :deep(.hero) {
+    z-index: 1;
   }
 }
 
@@ -147,57 +131,9 @@ onMounted(()=>{
   }
 }
 
-.title {
-  position: relative;
-  width: 90vw;
-  height: 30vh;
-  margin: 5vh auto 0;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: system-ui, serif;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, max-content));
-  place-content: center;
-  /* gap: .4em; */
-
-  .upper,
-  .lower {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-  }
-
-  .upper {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 2 / -1;
-    margin-left: auto;
-    margin-right: 0;
-    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
-    transition: clip-path 2.5s ease-out;
-  }
-
-  .lower {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    transition: clip-path 2.5s .5s ease-out;
-
-    div:first-child {
-      padding-right: .4em;
-    }
-  }
-
-  .spacer {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    height: 1px;
-    background-color: black;
-    transition: clip-path 1.5s .5s ease;
-  }
-}
-
 .outbound {
   text-align: center;
+  z-index: 2;
 }
 .outbound-list {
   margin-inline: auto;
@@ -215,6 +151,7 @@ onMounted(()=>{
 .projects {
   width: max-content;
   margin-inline: auto;
+  z-index: 2;
 }
 .projects-list {
   position: relative;

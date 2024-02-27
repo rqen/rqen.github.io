@@ -1,2 +1,7 @@
 @import 'reset.css';
 @import 'breakpoints.css';
+
+body {
+  background-color: black;
+  color: lightgrey;
+}
