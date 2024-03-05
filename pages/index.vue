@@ -65,35 +65,66 @@ onMounted(()=>{
         <ul class="projects-list">
           <li class="project">
             <!-- <h3 class="heading">Implement Consulting Group</h3> -->
-            <a target="_blank" href="https://implementconsultinggroup.com/" class="link">Implement Consulting Group</a>
+            <a 
+            target="_blank" 
+            href="https://implementconsultinggroup.com/"
+            class="link"
+            rel="noopener noreferrer">Implement Consulting Group</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">One and Only Musicals</h3> -->
-            <a target="_blank" href="https://oneandonlymusicals.dk/" class="link">One and Only Musicals</a>
+            <a 
+            target="_blank" 
+            href="https://oneandonlymusicals.dk/"
+            class="link"
+            rel="noopener noreferrer">One and Only Musicals</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">WSA</h3> -->
-            <a target="_blank" href="https://www.wsa.com/" class="link">wsa.com</a>
+            <a 
+            target="_blank" 
+            href="https://www.wsa.com
+            " class="lin
+            rel="noopener noreferrer"k">wsa.com</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">BoConcept</h3> -->
-            <a target="_blank" href="https://boconcept.com/" class="link">BoConcept</a>
+            <a 
+            target="_blank" 
+            href="https://boconcept.com/"
+            class="link"
+            rel="noopener noreferrer">BoConcept</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Pandora</h3> -->
-            <a target="_blank" href="#nolongeronline" class="no-link">Pandora - product launch sites</a>
+            <a 
+            href="#nolongeronline"
+            class="no-link"
+            rel="noopener noreferrer">Pandora - product launch sites</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Muuto</h3> -->
-            <a target="_blank" href="https://muuto.com/" class="link">Muuto</a>
+            <a 
+            target="_blank" 
+            href="https://muuto.com/"
+            class="link"
+            rel="noopener noreferrer">Muuto</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Magasin</h3> -->
-            <a target="_blank" href="https://magasin.dk/" class="link">Magasin</a>
+            <a 
+            target="_blank" 
+            href="https://magasin.dk/"
+            class="link"
+            rel="noopener noreferrer">Magasin</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">Tryg</h3> -->
-            <a target="_blank" href="https://tryg.dk/" class="link">Tryg</a>
+            <a 
+            target="_blank" 
+            href="https://tryg.dk/"
+            class="link"
+            rel="noopener noreferrer">Tryg</a>
           </li>
         </ul>
       </div>
