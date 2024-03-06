@@ -83,9 +83,9 @@ onMounted(()=>{
             <!-- <h3 class="heading">WSA</h3> -->
             <a 
             target="_blank" 
-            href="https://www.wsa.com
-            " class="lin
-            rel="noopener noreferrer"k">wsa.com</a>
+            href="https://www.wsa.com"
+            class="link"
+            rel="noopener noreferrer">wsa.com</a>
           </li>
           <li class="project">
             <!-- <h3 class="heading">BoConcept</h3> -->
