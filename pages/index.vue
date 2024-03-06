@@ -7,7 +7,7 @@ const checkersBgColor = ref('')
 
 const doIntro = ref(false)
 
-const findRandomColor = ()=>{
+const findRandomColor = () => {
   let randomColor = gsap.utils.random(colors)
   if (randomColor === checkersBgColor.value) {
     checkersBgColor.value = findRandomColor()
